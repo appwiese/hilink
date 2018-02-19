@@ -393,7 +393,7 @@ func (c *Client) PCAssistantConfig() (XMLData, error) {
 
 // DeviceConfig retrieves device configuration.
 func (c *Client) DeviceConfig() (XMLData, error) {
-	return c.Do("config/deviceinformation/config.xml", nil)
+	return c.Do("api/device/information", nil)
 }
 
 // WebUIConfig retrieves WebUI configuration.
